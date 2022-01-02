@@ -11,7 +11,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="RouterSample_iOS" customModuleProvider="target">
             <connections>
                 <outlet property="toBlueButton" destination="pmx-mt-HGa" id="aqS-Gf-SUv"/>
+                <outlet property="toGreenButton" destination="wC5-W2-5OE" id="han-yS-I79"/>
                 <outlet property="toRedButton" destination="ShC-Lg-l9Q" id="Rim-3A-Doj"/>
+                <outlet property="toYellowButton" destination="DCe-UA-sxz" id="nsW-Qk-vk8"/>
                 <outlet property="view" destination="iN0-l3-epB" id="yot-8S-YNr"/>
             </connections>
         </placeholder>
@@ -24,12 +26,22 @@
                     <rect key="frame" x="104.5" y="228" width="205" height="278"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pmx-mt-HGa">
-                            <rect key="frame" x="0.0" y="0.0" width="205" height="139"/>
+                            <rect key="frame" x="0.0" y="0.0" width="205" height="69.5"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="Button"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ShC-Lg-l9Q">
-                            <rect key="frame" x="0.0" y="139" width="205" height="139"/>
+                            <rect key="frame" x="0.0" y="69.5" width="205" height="69.5"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCe-UA-sxz">
+                            <rect key="frame" x="0.0" y="139" width="205" height="69.5"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wC5-W2-5OE">
+                            <rect key="frame" x="0.0" y="208.5" width="205" height="69.5"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="Button"/>
                         </button>
