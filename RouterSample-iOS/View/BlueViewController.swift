@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BlueViewController: UIViewController {
+final class BlueViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
