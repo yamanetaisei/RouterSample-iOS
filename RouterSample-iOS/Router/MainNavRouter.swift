@@ -17,7 +17,6 @@ protocol MainNavRouting: AnyObject {
 }
 
 final class MainNavRouter: MainNavRouting {
-    
     private let container: UIViewController
     
     init(container: UIViewController) {
