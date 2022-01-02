@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+final class MainViewController: UIViewController {
 
     @IBOutlet private weak var toBlueButton: UIButton! {
         didSet {
@@ -26,6 +26,22 @@ class MainViewController: UIViewController {
             toRedButton.addTarget(self, action: #selector(tapToRedButton), for: .touchUpInside)
         }
     }
+    @IBOutlet private weak var toYellowButton: UIButton!  {
+        didSet {
+            toYellowButton.backgroundColor = .yellow
+            toYellowButton.setTitle("Yellow", for: .normal)
+            toYellowButton.setTitleColor(.white, for: .normal)
+            toYellowButton.addTarget(self, action: #selector(tapToYellowButton), for: .touchUpInside)
+        }
+    }
+    @IBOutlet private weak var toGreenButton: UIButton! {
+        didSet {
+            toGreenButton.backgroundColor = .green
+            toGreenButton.setTitle("Green", for: .normal)
+            toGreenButton.setTitleColor(.white, for: .normal)
+            toGreenButton.addTarget(self, action: #selector(tapToGreenButton), for: .touchUpInside)
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,5 +53,13 @@ class MainViewController: UIViewController {
     
     @objc func tapToRedButton() {
         MainRouter(container: self).transition(to: .red)
+    }
+    
+    @objc func tapToYellowButton() {
+        MainNavRouter(container: self).transition(to: .yellow)
+    }
+    
+    @objc func tapToGreenButton() {
+        MainNavRouter(container: self).transition(to: .green)
     }
 }
