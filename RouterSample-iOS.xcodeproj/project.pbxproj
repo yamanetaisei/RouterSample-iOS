@@ -70,7 +70,6 @@
 			children = (
 				6AA547702780CA2000BB9093 /* Router */,
 				6AA547682780BEB200BB9093 /* View */,
-				6AA5476D2780C40400BB9093 /* Resource */,
 				6AA5475D2780BC1200BB9093 /* Assets.xcassets */,
 				6AA547622780BC1200BB9093 /* Info.plist */,
 			);
@@ -80,12 +79,9 @@
 		6AA547682780BEB200BB9093 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				6AA547692780BEED00BB9093 /* MainViewController.swift */,
-				6AA5476B2780C16800BB9093 /* MainViewController.xib */,
-				6AA5476E2780C65100BB9093 /* BlueViewController.swift */,
-				6AA547732781FC3E00BB9093 /* RedViewController.swift */,
-				6AEDFEC827821C1400CF7A3A /* YellowViewController.swift */,
-				6AEDFECA27821C3F00CF7A3A /* GreenViewController.swift */,
+				6AEDFECF278224DA00CF7A3A /* Main */,
+				6AEDFECE278224C000CF7A3A /* Color */,
+				6AA5476D2780C40400BB9093 /* Resource */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -107,6 +103,26 @@
 				6AEDFECC27821ED800CF7A3A /* MainNavRouter.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		6AEDFECE278224C000CF7A3A /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				6AA5476E2780C65100BB9093 /* BlueViewController.swift */,
+				6AA547732781FC3E00BB9093 /* RedViewController.swift */,
+				6AEDFEC827821C1400CF7A3A /* YellowViewController.swift */,
+				6AEDFECA27821C3F00CF7A3A /* GreenViewController.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		6AEDFECF278224DA00CF7A3A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				6AA5476B2780C16800BB9093 /* MainViewController.xib */,
+				6AA547692780BEED00BB9093 /* MainViewController.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
