@@ -17,7 +17,7 @@ protocol MainRouting: AnyObject {
 }
 
 final class MainRouter: MainRouting {
-    private unowned let container: UIViewController
+    private let container: UIViewController
     
     init(container: UIViewController) {
         self.container = container
