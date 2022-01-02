@@ -70,6 +70,7 @@
 			children = (
 				6AA547702780CA2000BB9093 /* Router */,
 				6AA547682780BEB200BB9093 /* View */,
+				6AA5476D2780C40400BB9093 /* Resource */,
 				6AA5475D2780BC1200BB9093 /* Assets.xcassets */,
 				6AA547622780BC1200BB9093 /* Info.plist */,
 			);
@@ -81,7 +82,6 @@
 			children = (
 				6AEDFECF278224DA00CF7A3A /* Main */,
 				6AEDFECE278224C000CF7A3A /* Color */,
-				6AA5476D2780C40400BB9093 /* Resource */,
 			);
 			path = View;
 			sourceTree = "<group>";
