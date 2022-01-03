@@ -7,30 +7,48 @@
 
 import UIKit
 
-enum MainRouteDestination {
-    case blue
-    case red
-}
-
 protocol MainRouting: AnyObject {
-    func transition(to destination: MainRouteDestination)
+    func transition(to destination: MainRouteDestination, type: TransitionType)
 }
 
-final class MainRouter: MainRouting {
+final class MainRouter {
     private let container: UIViewController
     
     init(container: UIViewController) {
         self.container = container
     }
-    
-    func transition(to destination: MainRouteDestination) {
+    //DI
+    static func assembleModules() -> UIViewController {
+        let view = MainViewController()
+        let mainRouter = MainRouter(container: view)
+        
+        let presenter = MainPresenter(view: view, mainRouter: mainRouter)
+        
+        view.presenter = presenter
+        
+        return view
+    }
+}
+
+extension MainRouter: MainRouting {
+    func transition(to destination: MainRouteDestination, type: TransitionType) {
         let controller: UIViewController
         switch destination {
         case .blue:
             controller = BlueViewController()
         case .red:
             controller = RedViewController()
+        case .yellow:
+            controller = YellowViewController()
+        case .green:
+            controller = GreenViewController()
         }
-        container.present(controller, animated: true)
+        
+        switch type {
+        case .present:
+            container.present(controller, animated: true)
+        case .push:
+            container.navigationController?.pushViewController(controller, animated: true)
+        }
     }
 }
