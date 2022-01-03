@@ -72,10 +72,7 @@
 		6AA547532780BC1100BB9093 /* RouterSample-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				6AEDFED627823CE600CF7A3A /* Application */,
-				6AEDFEDD2782984300CF7A3A /* Presenter */,
-				6AA547702780CA2000BB9093 /* Router */,
-				6AA547682780BEB200BB9093 /* View */,
+				6AEDFEE02782AC6400CF7A3A /* Source */,
 				6AA5476D2780C40400BB9093 /* Resource */,
 				6AA547622780BC1200BB9093 /* Info.plist */,
 			);
@@ -145,6 +142,17 @@
 				6AEDFED027822C7700CF7A3A /* MainPresenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		6AEDFEE02782AC6400CF7A3A /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				6AA547682780BEB200BB9093 /* View */,
+				6AA547702780CA2000BB9093 /* Router */,
+				6AEDFEDD2782984300CF7A3A /* Presenter */,
+				6AEDFED627823CE600CF7A3A /* Application */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
