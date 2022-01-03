@@ -8,7 +8,12 @@
 import UIKit
 
 protocol MainRouting: AnyObject {
-    func transition(to destination: MainRouteDestination)
+    func transition(to destination: MainRouteDestination, type: TransitionType)
+}
+
+enum TransitionType {
+    case present
+    case push
 }
 
 final class MainRouter {
@@ -21,9 +26,8 @@ final class MainRouter {
     static func assembleModules() -> UIViewController {
         let view = MainViewController()
         let mainRouter = MainRouter(container: view)
-        let mainNavRouter = MainNavRouter(container: view)
         
-        let presenter = MainPresenter(view: view, mainRouter: mainRouter, mainNavRouter: mainNavRouter)
+        let presenter = MainPresenter(view: view, mainRouter: mainRouter)
         
         view.presenter = presenter
         
@@ -32,14 +36,24 @@ final class MainRouter {
 }
 
 extension MainRouter: MainRouting {
-    func transition(to destination: MainRouteDestination) {
+    func transition(to destination: MainRouteDestination, type: TransitionType) {
         let controller: UIViewController
         switch destination {
         case .blue:
             controller = BlueViewController()
         case .red:
             controller = RedViewController()
+        case .yellow:
+            controller = YellowViewController()
+        case .green:
+            controller = GreenViewController()
         }
-        container.present(controller, animated: true)
+        
+        switch type {
+        case .present:
+            container.present(controller, animated: true)
+        case .push:
+            container.navigationController?.pushViewController(controller, animated: true)
+        }
     }
 }

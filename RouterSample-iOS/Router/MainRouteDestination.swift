@@ -10,4 +10,6 @@ import Foundation
 enum MainRouteDestination {
     case blue
     case red
+    case yellow
+    case green
 }

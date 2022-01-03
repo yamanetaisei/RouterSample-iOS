@@ -58,10 +58,10 @@ final class MainViewController: UIViewController {
     }
     
     @objc func tapToYellowButton() {
-        MainNavRouter(container: self).transition(to: .yellow)
+        presenter.push(to: .yellow)
     }
     
     @objc func tapToGreenButton() {
-        MainNavRouter(container: self).transition(to: .green)
+        presenter.push(to: .green)
     }
 }

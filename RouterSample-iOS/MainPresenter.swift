@@ -14,27 +14,24 @@ enum PresentDestination {
 
 protocol MainPresentation: AnyObject {
     func present(to destination: MainRouteDestination)
-    func push(to destination: MainNavRouteDestination)
+    func push(to destination: MainRouteDestination)
 }
 
 final class MainPresenter: MainPresentation{
     private weak var view: MainViewController?
     private let mainRouter: MainRouter
-    private let mainNavRouter: MainNavRouter
     
     init(view: MainViewController,
-         mainRouter: MainRouter,
-         mainNavRouter: MainNavRouter) {
+         mainRouter: MainRouter) {
         self.view = view
         self.mainRouter = mainRouter
-        self.mainNavRouter = mainNavRouter
     }
     
     func present(to destination: MainRouteDestination) {
-        mainRouter.transition(to: destination)
+        mainRouter.transition(to: destination, type: .present)
     }
     
-    func push(to destination: MainNavRouteDestination) {
-        mainNavRouter.transition(to: destination)
+    func push(to destination: MainRouteDestination) {
+        mainRouter.transition(to: destination, type: .push)
     }
 }

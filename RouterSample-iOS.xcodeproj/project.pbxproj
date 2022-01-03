@@ -18,10 +18,8 @@
 		6AA547742781FC3E00BB9093 /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA547732781FC3E00BB9093 /* RedViewController.swift */; };
 		6AEDFEC927821C1400CF7A3A /* YellowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEDFEC827821C1400CF7A3A /* YellowViewController.swift */; };
 		6AEDFECB27821C3F00CF7A3A /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEDFECA27821C3F00CF7A3A /* GreenViewController.swift */; };
-		6AEDFECD27821ED800CF7A3A /* MainNavRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEDFECC27821ED800CF7A3A /* MainNavRouter.swift */; };
 		6AEDFED127822C7700CF7A3A /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEDFED027822C7700CF7A3A /* MainPresenter.swift */; };
 		6AEDFED32782340500CF7A3A /* MainRouteDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEDFED22782340500CF7A3A /* MainRouteDestination.swift */; };
-		6AEDFED52782346C00CF7A3A /* MainNavRouteDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEDFED42782346C00CF7A3A /* MainNavRouteDestination.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,10 +36,8 @@
 		6AA547732781FC3E00BB9093 /* RedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
 		6AEDFEC827821C1400CF7A3A /* YellowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowViewController.swift; sourceTree = "<group>"; };
 		6AEDFECA27821C3F00CF7A3A /* GreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
-		6AEDFECC27821ED800CF7A3A /* MainNavRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavRouter.swift; sourceTree = "<group>"; };
 		6AEDFED027822C7700CF7A3A /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		6AEDFED22782340500CF7A3A /* MainRouteDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouteDestination.swift; sourceTree = "<group>"; };
-		6AEDFED42782346C00CF7A3A /* MainNavRouteDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavRouteDestination.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,9 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				6AA547712780CA3D00BB9093 /* MainRouter.swift */,
-				6AEDFECC27821ED800CF7A3A /* MainNavRouter.swift */,
 				6AEDFED22782340500CF7A3A /* MainRouteDestination.swift */,
-				6AEDFED42782346C00CF7A3A /* MainNavRouteDestination.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -217,10 +211,8 @@
 				6AEDFED32782340500CF7A3A /* MainRouteDestination.swift in Sources */,
 				6AEDFEC927821C1400CF7A3A /* YellowViewController.swift in Sources */,
 				6AA547722780CA3D00BB9093 /* MainRouter.swift in Sources */,
-				6AEDFECD27821ED800CF7A3A /* MainNavRouter.swift in Sources */,
 				6AA547552780BC1100BB9093 /* AppDelegate.swift in Sources */,
 				6AEDFED127822C7700CF7A3A /* MainPresenter.swift in Sources */,
-				6AEDFED52782346C00CF7A3A /* MainNavRouteDestination.swift in Sources */,
 				6AA547572780BC1100BB9093 /* SceneDelegate.swift in Sources */,
 				6AA5476F2780C65100BB9093 /* BlueViewController.swift in Sources */,
 				6AA547742781FC3E00BB9093 /* RedViewController.swift in Sources */,

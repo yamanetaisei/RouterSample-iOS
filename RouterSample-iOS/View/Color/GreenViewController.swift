@@ -11,7 +11,6 @@ final class GreenViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("green")
         self.view.backgroundColor = .green
     }
 }
