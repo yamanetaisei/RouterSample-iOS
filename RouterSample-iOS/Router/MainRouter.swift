@@ -11,11 +11,6 @@ protocol MainRouting: AnyObject {
     func transition(to destination: MainRouteDestination, type: TransitionType)
 }
 
-enum TransitionType {
-    case present
-    case push
-}
-
 final class MainRouter {
     private let container: UIViewController
     

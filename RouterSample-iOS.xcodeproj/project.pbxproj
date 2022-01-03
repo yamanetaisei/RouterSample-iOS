@@ -20,6 +20,7 @@
 		6AEDFECB27821C3F00CF7A3A /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEDFECA27821C3F00CF7A3A /* GreenViewController.swift */; };
 		6AEDFED127822C7700CF7A3A /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEDFED027822C7700CF7A3A /* MainPresenter.swift */; };
 		6AEDFED32782340500CF7A3A /* MainRouteDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEDFED22782340500CF7A3A /* MainRouteDestination.swift */; };
+		6AEDFEDF27829A8A00CF7A3A /* TransitionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEDFEDE27829A8A00CF7A3A /* TransitionType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		6AEDFECA27821C3F00CF7A3A /* GreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
 		6AEDFED027822C7700CF7A3A /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		6AEDFED22782340500CF7A3A /* MainRouteDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouteDestination.swift; sourceTree = "<group>"; };
+		6AEDFEDE27829A8A00CF7A3A /* TransitionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				6AA547712780CA3D00BB9093 /* MainRouter.swift */,
 				6AEDFED22782340500CF7A3A /* MainRouteDestination.swift */,
+				6AEDFEDE27829A8A00CF7A3A /* TransitionType.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				6AEDFED127822C7700CF7A3A /* MainPresenter.swift in Sources */,
 				6AA547572780BC1100BB9093 /* SceneDelegate.swift in Sources */,
 				6AA5476F2780C65100BB9093 /* BlueViewController.swift in Sources */,
+				6AEDFEDF27829A8A00CF7A3A /* TransitionType.swift in Sources */,
 				6AA547742781FC3E00BB9093 /* RedViewController.swift in Sources */,
 				6AA5476A2780BEED00BB9093 /* MainViewController.swift in Sources */,
 			);
