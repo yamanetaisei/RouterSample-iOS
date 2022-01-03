@@ -7,22 +7,31 @@
 
 import UIKit
 
-enum MainRouteDestination {
-    case blue
-    case red
-}
-
 protocol MainRouting: AnyObject {
     func transition(to destination: MainRouteDestination)
 }
 
-final class MainRouter: MainRouting {
+final class MainRouter {
     private let container: UIViewController
     
     init(container: UIViewController) {
         self.container = container
     }
-    
+    //DI
+    static func assembleModules() -> UIViewController {
+        let view = MainViewController()
+        let mainRouter = MainRouter(container: view)
+        let mainNavRouter = MainNavRouter(container: view)
+        
+        let presenter = MainPresenter(view: view, mainRouter: mainRouter, mainNavRouter: mainNavRouter)
+        
+        view.presenter = presenter
+        
+        return view
+    }
+}
+
+extension MainRouter: MainRouting {
     func transition(to destination: MainRouteDestination) {
         let controller: UIViewController
         switch destination {

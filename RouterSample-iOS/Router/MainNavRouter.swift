@@ -7,11 +7,6 @@
 
 import UIKit
 
-enum MainNavRouteDestination {
-    case yellow
-    case green
-}
-
 protocol MainNavRouting: AnyObject {
     func transition(to destination: MainNavRouteDestination)
 }

@@ -43,16 +43,18 @@ final class MainViewController: UIViewController {
         }
     }
     
+    var presenter: MainPresentation!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
     @objc func tapToBlueButton() {
-        MainRouter(container: self).transition(to: .blue)
+        presenter.present(to: .blue)
     }
     
     @objc func tapToRedButton() {
-        MainRouter(container: self).transition(to: .red)
+        presenter.present(to: .red)
     }
     
     @objc func tapToYellowButton() {
