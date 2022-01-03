@@ -7,11 +7,6 @@
 
 import Foundation
 
-enum PresentDestination {
-    case blue
-    case red
-}
-
 protocol MainPresentation: AnyObject {
     func present(to destination: MainRouteDestination)
     func push(to destination: MainRouteDestination)
